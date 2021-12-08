@@ -5,3 +5,11 @@ $(".sidebar-btn").click(function() {
 $(".hide-btn").click(function() {
     $(".sidebar").animate({ marginLeft: "-100%" })
 })
+
+
+function jumpToSmt(url) {
+    setTimeout(function() {
+        location.href = `${url}`;
+    }, 500)
+
+}
