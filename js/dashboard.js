@@ -74,3 +74,6 @@ const myChart = new Chart(ov, {
         }
     }
 });
+
+let orderFromPlace = [5, 15, 4, 9, 7];
+let place = ["YGN", "MDY", "NYT", "SHAN", "JAPAN"]
