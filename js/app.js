@@ -13,3 +13,7 @@ function jumpToSmt(url) {
     }, 500)
 
 }
+
+$(function() {
+    $('[data-toggle="popover"]').popover()
+})

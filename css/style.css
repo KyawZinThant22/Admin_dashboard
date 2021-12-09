@@ -5,6 +5,8 @@
 
 :root {
     --primary-soft: #f3f3f3;
+    --green-light: #e8f5e9;
+    --red--ligth: #fce4ec;
 }
 
 .content {
@@ -55,8 +57,30 @@
     margin-top: -100px;
 }
 
+.item-carousel {
+    margin-top: -100px;
+}
+
 .item-card-img {
     height: 200px;
+}
+
+.badge-success {
+    background-color: var(--green-light);
+    color: green;
+}
+
+.badge {
+    /* margin: 59px; */
+    width: 50px;
+    height: 30px;
+    align-items: center;
+    line-height: 15px;
+}
+
+.badge-danger {
+    background-color: var(--red--ligth);
+    color: red;
 }
 
 @media screen and (max-width:780px) {

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <section class="container-fluid">
+        <div class="row">
+
+            <!-- sidebar -->
+            <div class="col-12  col-lg-3  col-xl-2 sidebar  vh-100">
+                <div class="d-flex justify-content-between align-items-center py-2 mt-3">
+                    <div class="">
+                        <span class="bg-primary pt-3 p-2 rounded mr-2">
+                            <i class="feather-shopping-bag text-white h4"></i>
+                        </span>
+                        <span class="font-weight-bold h4 text-uppercase text-primary">My Shop</span>
+                    </div>
+                    <button class="hide-btn btn btn-light d-block d-lg-none">
+                        <i class="feather-x text-primary " style="font-size:2em;"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- sidebar end -->
+
+            <!-- contact-box -->
+            <div class="col-12  col-lg-9  col-xl-10 py-3 content vh-100">
+                <div class="row header mb-4">
+
+
+                    <div class="col-12">
+                        <div class="bg-primary p-2 rounded d-flex justify-content-between align-items-center">
+                            <button class="sidebar-btn btn btn-primary  btn-sm d-block d-lg-none">
+                                <i class="feather-menu text-light " style="font-size:2em;"></i>
+                            </button>
+                            <form action="" method="post" class="d-none d-md-block">
+                                <div class="form-inline">
+                                    <input type="text" class="form-control mr-2">
+
+                                    <button class="btn btn-light">
+                                        <i class="feather-search text-primary"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <img src="img/user/brian.jpg" class="user-img rounded-circle shadow-sm mr-2" alt=""> MgThone Nya
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content area starts now -->
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-white mb-4">
+                                <li class="breadcrumb-item"><a href="#"><i class="feather-home"></i></a></li>
+                                <li class="breadcrumb-item"><a href="#">Item</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Add Item</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-xl-8">
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="mb-0">
+                                        <i class="feather-plus-circle text-primary"></i>Add item
+                                    </h4>
+                                    <a href="" class="btn btn-outline-primary ">
+                                        <i class="feather-list"></i>
+                                    </a>
+                                </div>
+                                <hr>
+                                <form action="" method="post">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6">
+                                            <div class="form-group">
+                                                <label for="photo mr-2">
+                                                    Item Photo 
+                                                   
+                                                        <i class="feather-info " data-container="body" data-toggle="popover" data-placement="top" data-content="Only support JPG and PNG"></i>
+                                                </label>
+                                                <input type="file" name="photo" id="photo" class="form-control p-1">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="item">Item Name</label>
+                                                <input type="text" class="form-control" id="item">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="type">Type</label>
+                                                <select name="" id="type" class="form-control custom-select">
+                                                    <option value="0">ကုန်ဆို</option>
+                                                    <option value="1">ကုန်ခြောက်</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="type">Main Category</label>
+                                                <select name="" id="type" class="form-control custom-select">
+                                                    <option value="0">ကုန်ဆို</option>
+                                                    <option value="1">ကုန်ခြောက်</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="type">Sub Category</label>
+                                                <select name="" id="type" class="form-control custom-select">
+                                                    <option value="0">ကုန်ဆို</option>
+                                                    <option value="1">ကုန်ခြောက်</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="q">Item Quantity</label>
+                                                    <input type="text" name="q" id="q" class="form-control">
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="form-group">
+                                                        <label for="type">Sub Category</label>
+                                                        <select name="" id="type" class="form-control custom-select">
+                                                            <option value="0">ကုန်ဆို</option>
+                                                            <option value="1">ကုန်ခြောက်</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Price">Price</label>
+                                                <input type="number" class="form-control" id="Price">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="des">Description</label>
+                                                <textarea type="text" name="des" class="form-control" rows="8" id="des"></textarea>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <button class="btn btn-primary">Add Item</button>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- content area end now -->
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery.min.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.js "></script>
+
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+
+<!-- 
+<div class="item-card ">
+    <div class="d-flex justify-content-between align-items-end ">
+        <div class="w-50 ">
+            <h4 class=" ">Coffee cup</h4>
+            <p class="font-weight-bolder text-black-50 mb-0 mb-3 ">500MMK</p>
+            <div class="progress mb-3 ">
+                <div class="progress-bar progress-bar-striped progress-bar-animated " role="progressbar " aria-valuenow="75 " aria-valuemin="0 " aria-valuemax="100 " style="width: 75% "></div>
+            </div>
+        </div>
+        <img src="img/user/item1.png " alt=" " class="item-card-img ">
+    </div>
+</div> -->
