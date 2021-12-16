@@ -1,0 +1,23 @@
+{
+  "name": "Admin_Dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyawZinThant22/Admin_dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KyawZinThant22/Admin_dashboard/issues"
+  },
+  "homepage": "https://github.com/KyawZinThant22/Admin_dashboard#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
+}
